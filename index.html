@@ -15,137 +15,151 @@
         <!-- Latest Font-Awesome CDN -->
         <script src="https://kit.fontawesome.com/3a818acd01.js" crossorigin="anonymous"></script>
     </head>
-    <body data-spy="scroll" data-target="#navbar-example2" data-offset="60">
-        <nav  id="navbar-example2" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="#">BLOGGER</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse  justify-content-end fixed" id="navbarSupportedContent">
-                <ul class="navbar-nav ">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Explore">Explore</a>
-                    </li>  
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Create">Create</a>
-                    </li>  <li class="nav-item">
-                        <a class="nav-link" href="#Shere">Shere</a>
-                    </li>   
-                </ul>
+    <body data-spy="scroll" data-target="#nav-control" data-offset="56">
+        <!-- Nav-Section -->
+        <nav id="nav-control" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">     
+             <a class="navbar-brand text-uppercase" href="#">Blogger</a>
+             <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#nav-content"
+              aria-controls="nav-content"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+             >
+             <span class="navbar-toggler-icon"></span>
+             </button>
+            <div class="collapse navbar-collapse" id="nav-content">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#explore">Explore</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#create">Create</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#share">Share</a>
+            </li>
+            </ul>
             </div>
         </nav>
-    
-        <main class="vh-100 " id="Home">
-            <div class="container h-100 d-flex align-items-center justify-content-center mz-4">
-                <div class="row ">
+        <!-- Home-Section -->
+        <main class="py-5" id="home">
+            <div class="container py-5  mz-4">
+                <div class="row py-5 my-5 ">
                     <div class="col-lg-7 d-none d-lg-block ">
                         <h2 class="text-white">Bild <span class="text-danger">social profiles</span> and gain revenue and <span class="text-danger">profits</span></h2>
                         <ul class="fa-ul">
-                            <li class="text-white mb-3"><span class="fa-li"><i class=" h5 fas fa-check-square"></i></span>Nulla ipsum cupdatat laboris aute amet. Nisi culpa cupidatat et laboris deserunt ut qui incididunt proident duis mollit. Sit amet ea magna repregenderit deserunt sit.</li>
-                            <li class="text-white mb-3"><span class="fa-li"><i class=" h5 fas fa-check-square"></i></span>Nulla ipsum cupdatat laboris aute amet. Nisi culpa cupidatat et laboris deserunt ut qui incididunt proident duis mollit. Sit amet ea magna repregenderit deserunt sit.</li>
-                            <li class="text-white"><span class="fa-li"><i class="h5 fas fa-check-square"></i></span>Nulla ipsum cupdatat laboris aute amet. Nisi culpa cupidatat et laboris deserunt ut qui incididunt proident duis mollit. Sit amet ea magna repregenderit deserunt sit.</li>
+                            <li class="text-white mb-3"><span class="fa-li"><i class="fa-solid fa-check text-primary rounded bg-light p-1"></i></span>Nulla ipsum cupdatat laboris aute amet. Nisi culpa cupidatat et laboris deserunt ut qui incididunt proident duis mollit. Sit amet ea magna repregenderit deserunt sit.</li>
+                            <li class="text-white mb-3"><span class="fa-li"><i class="fa-solid fa-check text-primary rounded bg-light p-1"></i></span>Nulla ipsum cupdatat laboris aute amet. Nisi culpa cupidatat et laboris deserunt ut qui incididunt proident duis mollit. Sit amet ea magna repregenderit deserunt sit.</li>
+                            <li class="text-white"><span class="fa-li"><i class="fa-solid fa-check text-primary rounded bg-light p-1"></i></span>Nulla ipsum cupdatat laboris aute amet. Nisi culpa cupidatat et laboris deserunt ut qui incididunt proident duis mollit. Sit amet ea magna repregenderit deserunt sit.</li>
                         </ul>
                     </div>
-                    <div class="col-lg-5 col-12 bg-primary p-3 mz-auto">
-                        <h2 class="text-center text-white">Sing up today</h2>
-                        <p class="text-center text-white">please fill out this form to register</p>
-                        <div class="form-group">
-                            <input type="text" class="form-control mb-3" name="Username" id="userName" aria-describedby="emailHelpId" placeholder="Username">
-                        </div>
+                    <div class="col ">
+                        <div class="bg-prple p-3">
+                             <h2 class="text-center text-white text-capitalize">Sing up today</h2>
+                             <p class="text-center text-white">please fill out this form to register</p>
+                         <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control mb-3" name="Username" id="userName" aria-describedby="emailHelpId" placeholder="Username">
+                            </div>
                             <div class="form-group">  
-                          <input type="email" class="form-control mb-3" name="email" id="email" aria-describedby="emailHelpId" placeholder="Email">
+                              <input type="email" class="form-control mb-3" name="email" id="email" aria-describedby="emailHelpId" placeholder="Email">
                             </div>
                             <div class="form-group">
-                          <input type="password" class="form-control mb-3" name="password" id="password" aria-describedby="emailHelpId" placeholder="Password">
-                        </div>
-                        <div class="form-group">
-                          <input type="password" class="form-control mb-3" name="confirmPassword" id="confirmPassword" aria-describedby="emailHelpId" placeholder="Confirm Password">
-                        </div>
-                          <button type="button" name="" id="" class="btn btn-outline-light btn-block">Subbmit</button>
-
+                              <input type="password" class="form-control mb-3" name="password" id="password" aria-describedby="emailHelpId" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                              <input type="password" class="form-control mb-3" name="confirmPassword" id="confirmPassword" aria-describedby="emailHelpId" placeholder="Confirm Password">
+                            </div>
+                              <button type="button" name="" id="" class="btn btn-outline-light btn-block">Subbmit</button>
+                         </form>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-       <section id="Explore" class="bg-dark text-white text-center p-4">
-        <div class="container-fluid">
+        <div class="container-fuid">
+        <!-- Explore-Section -->
+            <section id="explore" class="bg-dark text-white text-center p-5">
                 <h3 class="">Explore</h3>
                 <p>Ut eu cupidatat tempor non. Ex culpa officia cillum sunt fugiat incididunt proident commodo amet tempor officia esse culpa est. Excepteur veniam enim incididunt enim occaecat commodo ex. Aliqua esse magna eiusmod enim irure qui sit ex consequat ex sint. Ea consectetur eu laborum dolor exceptur proident aliqua tempor tempor cupidatat cillum proident laborum. Qui qui officia in non. Et sunt ipsum enim aute eu in nisi.</p>
                 <a name="" id="" class="btn btn-outline-light" href="#" role="button">Find Out More</a>
-            </div>     
-        </section>
-        <div class="container-fluid bg-white  p-5">
-            <div class="row align-items-center  ">
-                <div class="col-lg-6 col-12 ">
-                    <img class="w-100 rounded-circle" src="./images/explore-section11.jpg" alt="Explore">
+                 
+            </section>
+            <section class="bg-white  p-5">
+                <div class="row align-items-center  ">
+                    <div class="col-lg-6 col-12 ">
+                      <img class="w-100 rounded-circle" src="./images/explore-section11.jpg" alt="Explore">
+                    </div>
+                    <div class="col-lg-6 col-12 ">
+                      <h3>Explore & Connect</h3>
+                      <p> Ex culpa officia cillum sunt fugiat incididunt proident commodo amet tempor officia esse culpa est. Excepteur veniam enim incididunt enim occaecat commodo ex. Aliqua esse magna eiusmod enim irure qui sit ex consequat ex sint. Ea consectetur eu laborum dolor exceptur proident aliqua tempor tempor cupidatat cillum proident laborum. Qui qui officia in non. Et sunt ipsum enim aute eu in nisi.</p>
+                      <ul class="fa-ul">
+                         <li class=" mb-3"><span class="fa-li"><i class="fa-solid fa-check text-white rounded bg-dark p-1"></i></span>Nulla ipsum cupdatat laboris aute amet. Nisi culpa cupidatat et laboris deserunt ut qui incididunt proident duis mollit. Sit amet ea magna repregenderit deserunt sit.</li>
+                         <li class=" mb-3"><span class="fa-li"><i class="fa-solid fa-check text-white rounded bg-dark p-1"></i></span>Nulla ipsum cupdatat laboris aute amet. Nisi culpa cupidatat et laboris deserunt ut qui incididunt proident duis mollit. Sit amet ea magna repregenderit deserunt sit.</li>
+                      </ul>
+                    </div>
                 </div>
-                <div class="col-lg-6 col-12 ">
-                   <h3>Explore & Connect</h3>
-                   <p> Ex culpa officia cillum sunt fugiat incididunt proident commodo amet tempor officia esse culpa est. Excepteur veniam enim incididunt enim occaecat commodo ex. Aliqua esse magna eiusmod enim irure qui sit ex consequat ex sint. Ea consectetur eu laborum dolor exceptur proident aliqua tempor tempor cupidatat cillum proident laborum. Qui qui officia in non. Et sunt ipsum enim aute eu in nisi.</p>
-                   <ul class="fa-ul">
-                    <li class=" mb-3"><span class="fa-li"><i class=" text-dark h5 fas fa-check-square"></i></span>Nulla ipsum cupdatat laboris aute amet. Nisi culpa cupidatat et laboris deserunt ut qui incididunt proident duis mollit. Sit amet ea magna repregenderit deserunt sit.</li>
-                    <li class=" mb-3"><span class="fa-li"><i class=" text-dark h5 fas fa-check-square"></i></span>Nulla ipsum cupdatat laboris aute amet. Nisi culpa cupidatat et laboris deserunt ut qui incididunt proident duis mollit. Sit amet ea magna repregenderit deserunt sit.</li>
-                    
-                </ul>
-                </div>
-            </div>
-        </div>
-        <section id="Create" class="bg-primary text-white text-center p-4">
-            <div class="container-fluid">
+            </section>
+        <!-- Create - Section -->
+            <section id="create" class="bg-prple text-white text-center p-5">
+            
                     <h3 class="">Create</h3>
                     <p>Ut eu cupidatat tempor non. Ex culpa officia cillum sunt fugiat incididunt proident commodo amet tempor officia esse culpa est. Excepteur veniam enim incididunt enim occaecat commodo ex. Aliqua esse magna eiusmod enim irure qui sit ex consequat ex sint. Ea consectetur eu laborum dolor exceptur proident aliqua tempor tempor cupidatat cillum proident laborum. Qui qui officia in non. Et sunt ipsum enim aute eu in nisi.</p>
                     <a name="" id="" class="btn btn-outline-light" href="#" role="button">Find Out More</a>
-                </div>     
+                    
             </section>
-            <div class="container-fluid bg-dark  p-5">
+            <section class=" bg-dark  p-5">
                 <div class="row align-items-center  ">
                   
                     <div class="col-lg-6 col-12 text-white">
                        <h3>Create Your Passion</h3>
                        <p> Ex culpa officia cillum sunt fugiat incididunt proident commodo amet tempor officia esse culpa est. Excepteur veniam enim incididunt enim occaecat commodo ex. Aliqua esse magna eiusmod enim irure qui sit ex consequat ex sint. Ea consectetur eu laborum dolor exceptur proident aliqua tempor tempor cupidatat cillum proident laborum. Qui qui officia in non. Et sunt ipsum enim aute eu in nisi.</p>
-                       <ul class="fa-ul">
-                        <li class=" mb-3"><span class="fa-li"><i class=" text-white h5 fas fa-check-square"></i></span>Nulla ipsum cupdatat laboris aute amet. Nisi culpa cupidatat et laboris deserunt ut qui incididunt proident duis mollit. Sit amet ea magna repregenderit deserunt sit.</li>
-                        <li class=" mb-3"><span class="fa-li"><i class=" text-white h5 fas fa-check-square"></i></span>Nulla ipsum cupdatat laboris aute amet. Nisi culpa cupidatat et laboris deserunt ut qui incididunt proident duis mollit. Sit amet ea magna repregenderit deserunt sit.</li>
-                        
-                    </ul>
+                      <ul class="fa-ul">
+                        <li class=" mb-3"><span class="fa-li"><i class="fa-solid fa-check text-primary rounded bg-light p-1"></i></span>Nulla ipsum cupdatat laboris aute amet. Nisi 
+                            culpa cupidatat et laboris deserunt ut qui incididunt proident duis mollit. Sit amet ea magna repregenderit deserunt sit.</li>
+                        <li class=" mb-3"><span class="fa-li"><i class="fa-solid fa-check text-primary rounded bg-light p-1"></i></span>Nulla ipsum cupdatat laboris aute amet. Nisi 
+                            culpa cupidatat et laboris deserunt ut qui incididunt proident duis mollit. Sit amet ea magna repregenderit deserunt sit.</li>
+                      </ul>
                     </div>
                     <div class="col-lg-6 col-12 ">
                         <img class="w-100 rounded-circle" src="./images/create-section11.jpg" alt="Create">
                     </div>
                 </div>
-            </div>
-            <section id="Shere" class="bg-primary text-white text-center p-4">
-                <div class="container-fluid">
-                        <h3 class="">Shere</h3>
+            </section>
+        <!-- Share-Section -->
+            <section id="share" class="bg-prple text-white text-center p-5">
+                        <h3 class="">Share</h3>
                         <p>Ut eu cupidatat tempor non. Ex culpa officia cillum sunt fugiat incididunt proident commodo amet tempor officia esse culpa est. Excepteur veniam enim incididunt enim occaecat commodo ex. Aliqua esse magna eiusmod enim irure qui sit ex consequat ex sint. Ea consectetur eu laborum dolor exceptur proident aliqua tempor tempor cupidatat cillum proident laborum. Qui qui officia in non. Et sunt ipsum enim aute eu in nisi.</p>
                         <a name="" id="" class="btn btn-outline-light" href="#" role="button">Find Out More</a>
-                    </div>     
-                </section>
-                <div class="container-fluid bg-white  p-5">
-                    <div class="row align-items-center  ">
-                        <div class="col-lg-6 col-12 ">
-                            <img class="w-100 rounded-circle" src="./images/share-section11.jpg" alt="Shere">
-                        </div>
-                        <div class="col-lg-6 col-12 ">
-                           <h3>Shere What You Create</h3>
-                           <p> Ex culpa officia cillum sunt fugiat incididunt proident commodo amet tempor officia esse culpa est. Excepteur veniam enim incididunt enim occaecat commodo ex. Aliqua esse magna eiusmod enim irure qui sit ex consequat ex sint. Ea consectetur eu laborum dolor exceptur proident aliqua tempor tempor cupidatat cillum proident laborum. Qui qui officia in non. Et sunt ipsum enim aute eu in nisi.</p>
-                           <ul class="fa-ul">
-                            <li class=" mb-3"><span class="fa-li"><i class=" text-dark h5 fas fa-check-square"></i></span>Nulla ipsum cupdatat laboris aute amet. Nisi culpa cupidatat et laboris deserunt ut qui incididunt proident duis mollit. Sit amet ea magna repregenderit deserunt sit.</li>
-                            <li class=" mb-3"><span class="fa-li"><i class=" text-dark h5 fas fa-check-square"></i></span>Nulla ipsum cupdatat laboris aute amet. Nisi culpa cupidatat et laboris deserunt ut qui incididunt proident duis mollit. Sit amet ea magna repregenderit deserunt sit.</li>
-                            
+            </section>
+            <section class="bg-white  p-5">
+                <div class="row align-items-center  ">
+                    <div class="col-lg-6 col-12 ">
+                        <img class="w-100 rounded-circle" src="./images/share-section11.jpg" alt="Shere">
+                    </div>
+                    <div class="col-lg-6 col-12 ">
+                        <h3>Shere What You Create</h3>
+                        <p> Ex culpa officia cillum sunt fugiat incididunt proident commodo amet tempor officia esse culpa est. Excepteur veniam enim incididunt enim occaecat commodo ex. Aliqua esse magna eiusmod enim irure qui sit ex consequat ex sint. Ea consectetur eu laborum dolor exceptur proident aliqua tempor tempor cupidatat cillum proident laborum. Qui qui officia in non. Et sunt ipsum enim aute eu in nisi.</p>
+                        <ul class="fa-ul">
+                         <li class=" mb-3"><span class="fa-li"><i class="fa-solid fa-check text-white rounded bg-dark p-1"></i></span>Nulla ipsum cupdatat laboris aute amet. Nisi culpa cupidatat et laboris deserunt ut qui incididunt proident duis mollit. Sit amet ea magna repregenderit deserunt sit.</li>
+                         <li class=" mb-3"><span class="fa-li"><i class="fa-solid fa-check text-white rounded bg-dark p-1"></i></span>Nulla ipsum cupdatat laboris aute amet. Nisi culpa cupidatat et laboris deserunt ut qui incididunt proident duis mollit. Sit amet ea magna repregenderit deserunt sit.</li>
                         </ul>
-                        </div>
                     </div>
                 </div>
-                <footer class="bg-dark text-center text-white p-4">
+            </section>
+                <!-- Footer-Section -->
+            <footer class="bg-dark text-center text-white p-4">
                     <h4>BOLGGER</h4>
-                    <p>copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2017</p>
+                    <p>Copyright &copy; 2017</p>
                     <a name="" id="" class="btn btn-primary" href="#" role="button">Contact Us</a>
-                </footer>
+            </footer>
+        </div>
         <!-- jQuery library -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="ha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         
